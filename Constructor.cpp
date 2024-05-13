@@ -25,3 +25,25 @@ class Mahasiswa
             cout << endl;
         };
 };
+
+Mahasiswa::Mahasiswa(string iNama){
+    nama = iNama;
+}
+
+Mahasiswa::Mahasiswa(int iNim, string iNama)
+{
+    nim = iNim;
+    nama = iNama;
+}
+int main(){
+    Mahasiswa mhs1;
+    Mahasiswa mhs2(1);
+    Mahasiswa mhs3("Jamet");
+    Mahasiswa mhs4(1, "Bambang");
+
+    mhs1.cetak();
+    mhs2.cetak();
+    mhs3.cetak();
+    mhs4.cetak();
+    return 0;
+}
