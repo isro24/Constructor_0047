@@ -17,3 +17,10 @@ class buku
         }
 }bukunya;
 
+int main(){
+    // bukunya.setJudul("Matematikan");
+    // cout << bukunya.getJudul();
+    cout << bukunya.setJudul("Matematikan").getJudul(); // chain function calls
+    return 0;
+}
+
